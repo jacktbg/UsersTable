@@ -19,9 +19,7 @@ export const peopleSlice = createSlice({
       setLocalStorage(LocalStorageTypes.PEOPLE, state)
       return action.payload
     },
-    addFavorite: (state, action) => {
-      setLocalStorage(LocalStorageTypes.PEOPLE, state)
-      return action.payload
-    },
   },
 })
+
+export const { addPeople } = peopleSlice.actions
